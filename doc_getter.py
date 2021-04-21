@@ -34,7 +34,8 @@ def main():
     defendants_container = rs1 + rs2 #html container of all unique defendants
 
     #create parent directory to hold all search results
-    parent_path = f'/Users/eojohnson/Documents/Army Extremism/Research/New Script/doc_pulls/{date.today()}'
+    root_dir = '/Users/' #specify full path to parent dir here
+    parent_path = root_dir + f'/{date.today()}'
     try:
         os.mkdir(parent_path)
     except FileExistsError:
@@ -45,7 +46,6 @@ def main():
     docs_created = 0 #start a running count of all the new docs downloaded
 
     #identify a starting point for the directory walk
-    root_dir = '/Users/eojohnson/Documents/Army Extremism/Research/New Script/doc_pulls'
     extant_dirs = [] #create an empty container to hold all extant dirs
 
     for root, dirs, files in os.walk(root_dir, topdown=False):
