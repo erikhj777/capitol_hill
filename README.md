@@ -1,5 +1,5 @@
 # capitol_hill
-scripts to monitor DOJ investigations and arrests of participants in 6 JAN attack on U.S. Capitol
+we scraping scripts to monitor DOJ investigations and arrests of participants in 6 JAN attack on U.S. Capitol
 this repo currently contains two scripts
 
 # capitol_scrape.py
