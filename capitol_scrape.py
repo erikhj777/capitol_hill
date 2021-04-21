@@ -41,7 +41,7 @@ def main():
     print(f'{len(defendants_container)} total defendant records found')
 
     #read in existing arrest records in CSV file as pandas df
-    df = pd.read_csv('/Users/eojohnson/Documents/Army Extremism/Research/New Script/capitol_arrests.csv')
+    df = pd.read_csv('.csv') #add complete path to CSV file here
 
     new_entry_count = 0
 
@@ -83,7 +83,7 @@ def main():
             df = df.append(new_entry, ignore_index = True)
 
     #write the df back to the csv file
-    df.to_csv('/Users/eojohnson/Documents/Army Extremism/Research/New Script/capitol_arrests.csv', index = False)
+    df.to_csv('.csv', index = False) #add complete path to CSV file here
 
     print(f'search complete, {new_entry_count} new entry(s) added')
 
